@@ -1,0 +1,212 @@
+.footer{
+    padding: 60px 0px;
+    background-color: #2F303A;
+
+    &__section {
+      text-align: center;
+      
+    }
+  }
+  
+  .address {
+    font-style: normal;
+    margin-bottom: 60px;
+    
+
+    &__item:not(:last-child){
+        margin-bottom: 8px;
+        }
+        
+    &__link {
+        
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--description-text-color);
+
+          &--map {
+            color: var(--additional-color);
+            
+          }
+        }
+  }
+
+  .logo-link--footer {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--additional-color);
+  }
+
+  .social-links {
+     margin-bottom: 60px;
+    &__content{
+        margin-bottom: 20px;
+      
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--additional-color);
+      }
+      
+      
+      &__link--footer{
+        background-color: rgba(255, 255, 255, 0.1);
+      
+        transition: background-color 250ms var(--timing-function);
+    
+        &:hover,
+        &:focus{
+        background-color: var(--accent-color);
+      
+      }
+      }
+      
+      &__logo--footer {
+        
+        fill: var(--additional-color);
+        
+      }
+      
+  }
+  
+  
+  .form{
+    margin: 0 auto;
+    
+   
+    &__title{
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      
+        color: var(--additional-color);
+      }
+    &__label{
+      width: 450px;
+    }
+    &__imput{
+        display: inline-block;
+        margin-bottom: 20px;
+        padding-left: 16px;
+        width: 100%;
+        height: 50px;
+        outline: none;
+      
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+      
+      
+        background-color: #2F303A;
+
+        &:focus {
+         border-color: var(--accent-color);
+         }
+
+        &::placeholder {
+        display: inline-block;
+        
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        
+        color: rgba(255, 255, 255, 0.6);
+      }
+  }
+
+    &__btn-email{
+    display: flex;
+    align-items: center;
+    padding: 10px 28px;
+  
+  }
+  
+    &__icon-email{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill:var(--additional-color)
+  }
+}
+
+//TABLET
+@media  screen and (min-width: 768px) {
+  .footer{
+    &__section--tablet {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      margin-bottom: 60px;
+
+    }
+  }
+  .address {
+    margin-bottom: 0px;
+  }
+  .social-links {
+    margin-bottom: 0px;
+
+  }
+  .form__imput{
+    width: 450px;
+}
+}
+//DESCTOP
+@media  screen and (min-width: 1200px) {
+  .footer{
+    
+    &__section{
+        display: flex;
+        align-items: baseline;
+
+        &--tablet{
+          margin-bottom: 0px;
+        }
+        
+      }
+  }
+  
+  .address {
+    font-style: normal;
+
+    &__container{
+        margin-right: 70px; 
+      }
+
+    &__item:not(:last-child){
+        margin-bottom: 9px;
+        }
+        
+  }
+  
+  .form{
+    margin-left: 93px;
+    &__title{
+      text-align: start;
+    }
+
+    &__email{
+        display: flex;
+      }
+    &__label {
+      width: inherit;
+    }
+    &__imput{
+      margin-bottom: 0px;
+      width: 358px;
+      height: 50px;
+      margin-right: 12px;
+        
+      }
+      
+  }
+} 

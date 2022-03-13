@@ -1,0 +1,23 @@
+.logo-link{
+    color: var(--logo-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    &__accent {
+        color: var(--accent-color);
+      }
+
+      
+  }
+  
+  // DESKTOP
+  @media screen and (min-width: 1200px) {
+    .logo-link{
+      font-size: 26px;
+      line-height: 1.19;
+    }
+   
+}
